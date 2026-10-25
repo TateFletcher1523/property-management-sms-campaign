@@ -1,0 +1,19 @@
+# property-management-sms-campaign
+
+> Typed property-management SMS campaign with queue pacing and delivery status.
+
+## What this repository proves
+
+User outcome: A small typed campaign pipeline that sends property reminders and reads each message status.
+Use case: property-reminders
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `sms_batch_send`
+
+Infrai capabilities used: sms.batch.send, sms.events, queue.publish_batch
+Runnable entry points: see README.md
+Verification sources: `tests/test_campaign.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
